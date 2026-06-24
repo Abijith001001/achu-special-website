@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Special</title>
+<style>
+body{margin:0;background:linear-gradient(135deg,#ff9a9e,#fad0c4);height:100vh;overflow:hidden;display:flex;justify-content:center;align-items:center;font-family:Arial}
+.c{text-align:center;color:white;z-index:2}
+h1{font-size:3rem}
+.heart{font-size:100px;animation:b 1s infinite}
+@keyframes b{50%{transform:scale(1.2)}}
+.f{position:absolute;animation:up 8s linear infinite}
+@keyframes up{from{transform:translateY(100vh)}to{transform:translateY(-100px)}}
+button{padding:12px 20px;border:none;border-radius:12px}
+</style></head><body>
+<div class="c">
+<h1>Yes, you're the special person in my life ❤️</h1>
+<div class="heart">💖</div>
+<br><button onclick="location.href='message.html'">Open Message 💌</button>
+</div>
+<script>
+for(let i=0;i<35;i++){let d=document.createElement('div');d.className='f';d.innerHTML='❤';d.style.left=Math.random()*100+'vw';d.style.fontSize=(15+Math.random()*25)+'px';d.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(d);}
+</script></body></html>
